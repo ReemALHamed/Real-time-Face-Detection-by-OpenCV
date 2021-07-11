@@ -1,9 +1,9 @@
 # Real-time-Face-Detection-by-OpenCV
 
-This project is done using Pycharm IDE and Python, it is a Real-Time Face recognition using OpenCV while performing object detection using Haar feature-based cascade classifiers for detecting face , eyes and smile.
+This project is done using Pycharm IDE and Python, it is a Real-Time Face recognition using OpenCV while performing object detection using Haar feature-based cascade classifiers for detecting face, eyes, and smile.
 
 ## 1.Import and initialize
-Start by importing OpenCV and create a directory (ex: Cascades) to gather all Haar classifiers files that you want to use in you project, then use their path to loead them into your project.
+Start by importing OpenCV and create a directory (ex: Cascades) to gather all Haar classifiers files that you want to use in you project, then use their path to load them into your project.
 ##### Note: you can find Haar cascade classifiers files here (https://github.com/opencv/opencv/tree/master/data/haarcascades)
 ```
 import cv2
@@ -13,7 +13,7 @@ smileCascade = cv2.CascadeClassifier('Cascades/haarcascades/HAARCASCADE_SMILE.xm
 ```
 
 ## 2.Setting up your camera
-To start we need to capture the face and to do so we are using the PC embedded camera which we are refffering to it using (0) & setting the window size to specific measures in the following code lines:
+To start we need to capture the face and to do so we are using the PC embedded camera which we are referring to it using (0) & setting the window size to specific measures in the following code lines:
 ```
 cap = cv2.VideoCapture(0)
 cap.set(3,640) # set Width
@@ -79,10 +79,10 @@ k = cv2.waitKey(30) & 0xff
     cv2.imshow('Face Detection - Reem', img)
 ```
 ## 8.The Result !!
-To test the program i used a photo of mark zuckerberg , cuz why not :)
+To test the program i used a photo of Mark Zuckerberg, cuz why not :)
 
 
 https://user-images.githubusercontent.com/85634099/125203413-e627ee80-e280-11eb-9ab8-294f829b4398.mp4
 
 
-Refrence: https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826
+Reference: https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826
